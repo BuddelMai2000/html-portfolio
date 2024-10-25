@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Flaggen</title>
+<style>
+    .rechteck{
+        width: 200px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .quadratf{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        position:relative
+    }
+    #quadratv{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        margin: 20px auto;
+        border-radius: 0%;
+        transition: border-radius 0.2s;
+        
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Flaggen-Projekt</h1>
+    <p>
+        In diesem Projekt sollte ich die Flagge von Laos "basteln". Ich durfte nicht ein Bild der Flagge aus dem Internet kopieren, sondern die Flagge sollte aus Rechtecken und einem Kreis in den richtigen Farben und Proportionen zusammengesetzt werden.
+    </p>
+    <p>
+        Die Hex-Farbcodes einer Flagge kann man im Internet finden. Man nimmt also nicht einfach rot, sondern wählt den genau richtigen Farbton, indem man den Hex-Farbcode verwendet. Die Farbe ROT in der Flagge von Laos hat z.B. den Farbcode CE1126. Das ROT in der Flagge von Norwegen hingegen hat den Farbcode BA0C2F. 
+    </p>
+    Hier siehst du die beiden Farben im Vergleich:
+    <p>
+<div class="rechteck" style="background-color: #CE1126;">
+  Laos
+</div>
+<div class="rechteck" style="background-color: #BA0C2F; position:relative; left: 200px; top: -40px">
+    Norwegen
+  </div>
+    </p>
+    <p>
+        Um den Kreis zu erzeugen, verwendet man übrigens ein Quadrat mit abgerundeten Ecken. 
+        Wenn du an dem Schieberegler unter dem Quadrat ziehst, kannst du sehen, wie sich das Quadrat 
+        in einen Kreis verwandelt.
+    </p>
+ <div class="quadratf">
+    <div id="quadratv">
+    </div>
+ </div> 
+ 
+ <label for="radius">Ecken abrunden</label>
+<input type="range" id="radius" min="0" max="50" value="0">
+<p>
+    Die Sache mit den Farben ist einfach, aber ich fand es herausfordernd, 
+    die Rechtecke und den Kreis an die richtige Stelle zu verschieben, um die Flagge zu erzeugen.
+    Darum habe ich mir eine kleine Extraaufgabe gestellt und zwei weitere Flaggen gebastelt.
+    Klicke einfach auf den Ländernamen, um die zugehörige Flagge zu sehen.
+ </p> 
+<a href="./Flagge Laos.html">Laos</a>
+<a href="./Flagge Norwegen.html">Norwegen</a>
+<a href="./Flagge Kongo.html"></a>
+
+<script>
+    const quadratv = document.getElementById('quadratv');
+    const slider = document.getElementById('radius');
+
+    slider.addEventListener('input', function() 
+    {quadratv.style.borderRadius = slider.value + '%';
+    });
+</script>
+</body>
+</html>
