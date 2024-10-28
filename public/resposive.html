@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resposive websites</title>
+    <style>
+        h1{
+        color:red;
+        background-color: blue;
+        text-align: center;
+        }
+    
+        span{
+        color: red;
+        font-weight: bold;
+       }
+       .box{
+        background-color:blue;
+        width: 10vw;
+        height: 10vw;
+        border: 2px solid red;
+        float: left;
+        margin: 5px
+       }
+       .zwei{
+        margin: 5px 40vw ;
+       }
+    @media(max-width: 601px){
+        .k{display: none}
+    }
+    @media(min-width: 600px){
+        h1{
+            color: blue;
+            background-color: red;
+        }
+        .box{
+        background-color: red;
+        width: 15vw;
+        height: 15vw;
+        border: 3px solid blue;
+        border-radius: 50%;
+       }
+        span{
+            color: blue
+        }
+        .q{display: none;}
+    }
+    </style>
+</head>
+<body>
+    
+ <h1>Resposive Websites</h1>
+ <div class="box"></div>
+ <p>In diesem Projekt sollte ich eine Seite mit vorgegebenen 
+    Bildern und Texten so bearbeiten, dass sie <span> RESPONSIVE </span>
+    wird. Das bedeutet, dass die Seite darauf reagiert, 
+    wie groß der Bildschirm ist, bzw.  wie groß das Fenster ist, in dem sie betrachtet wird.
+    Wenn die Seite auf einem Handy betrachtet wird, sollten die Bilder 
+    untereinander angeordnet werden, bei größeren Bilschirmen nebeneinander.
+    Ich habe zur Demonstration auch auf dieser Seite schon mal ein paar 
+    Elemente eingebaut, die responsive sind. Du kannst ja mal ausprobieren, 
+    ob du Unterschiede siehst, wenn du den Bildschirm deines Handys im Hochformat 
+    und im Querformat betrachtest. Oder, wenn du die Seite auf einem Gerät mit 
+    größerem Bildschirm betrachtest, dann mach doch mal einfach das Fenster kleiner 
+    und schau, ob sich etwas verändert.
+    Klicke auf 
+    <span style="color:black; font-weight: normal;" class="k">den folgenden</span> 
+    <span style="color: red"; class="k">
+        Kreis
+    </span>
+    <span style="color:black; font-weight: normal;" class="q">das folgende</span>
+    <span style="color: blue;" class="q">
+        Quadrat
+    </span>
+    , um meine Lösung dieses Projekts anzuschauen.
+ </p>
+ <a href="">
+ <div  class="box zwei"></div>
+ </a>
