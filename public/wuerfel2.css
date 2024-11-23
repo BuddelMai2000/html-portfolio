@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    height: 100 vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+#container{
+    width: 70vh;
+    height: 60vw;
+    background-color: aqua;
+    position: relative;
+};
+
+#square1{
+    position:absolute;
+
+    width: 15%;
+    height: 15%;
+    background-color: beige;
+    position: absolute;
+    cursor:grab;
+}
+container
