@@ -1,7 +1,7 @@
 function zufall(){
    return Math.floor(Math.random()*3)
 };
-var bilder=["../assets/images/wuerfel1png","../assets/images/wuerfel2.png","../assets/images/wuerfel3.png"];
+var bilder=["../assets/images/wuerfel1.png","../assets/images/wuerfel2.png","../assets/images/wuerfel3.png"];
 var wuerfel1=zufall();
 var wuerfel2=zufall();
 var wuerfel3=zufall();
