@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.dice-container {
+    width: 80%;
+    height: 60vh;
+    position: relative;
+    border: 2px dashed #333;
+    margin-top: 20px;
+    background-color: #fafafa;
+    touch-action: none; /* Verhindert Scrollen während des Ziehens */
+}
+
+.die {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 32px; /* Größere und einheitliche Symbole */
+    font-weight: bold;
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+}
+
+.die:active {
+    cursor: grabbing;
+}
