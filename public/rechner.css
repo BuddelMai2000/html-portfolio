@@ -2,7 +2,7 @@ body{background-color:black;}
 #container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
     width: calc(7/12*90vh);
     gap: 10 px;
     box-sizing: border-box;
@@ -12,7 +12,7 @@ body{background-color:black;}
 }
 .header{
     grid-column: span 4;
-    font-size: 1.2rem;
+    font-size: 2rem;
 
     
 }
