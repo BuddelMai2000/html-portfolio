@@ -1,0 +1,31 @@
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
+    width: calc(7/12*90vh);
+    gap: 10 px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 5px solid gray;
+    border-radius: 3%;
+}
+.header{
+    grid-column: span 4;
+    font-size: 1.2rem;
+
+    
+}
+
+#equal{
+    grid-column: span 2;
+}
+
+.btn{
+    aspect-ratio: 1/1;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #eaeaea;
+    box-shadow: 0 2px 4px;
+    border-radius: 15%;
+    margin: 4%;
+}
