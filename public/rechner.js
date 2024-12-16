@@ -1,4 +1,4 @@
-document.querySelector("h1").style.color = "red";
+document.querySelector("h1").style.color = "orange";
 
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll(".btn");
